@@ -8,6 +8,12 @@ nav:
     - Sweeping: measurement/sweep.md
   - Data:
     - Data Formats: data/data_formats.md
+  - Analysis:
+      - Fitting: analysis/fitting.md
+      - Analysis Context: analysis/analysis_context.md
+  - Instruments:
+      - QCoDeS Drivers: instruments/qcodes_instruments/instruments.md
+      - OPX Code: instruments/opx.md
   - Examples:
       - Intro to our Holoviz apps: examples/Intro to our Holoviz apps.ipynb
       - Holoviz-based plotting in the lab: examples/Holoviz-based plotting in the lab - Primer.ipynb

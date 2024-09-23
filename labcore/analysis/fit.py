@@ -59,6 +59,7 @@ class AnalysisResult(object):
         return ret
 
 
+# FIXME: Why are we asking the coordinates and data on the init if we ask for it again in analyze?
 class Analysis(object):
     """Basic analysis object.
 

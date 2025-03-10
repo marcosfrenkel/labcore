@@ -159,7 +159,10 @@ def run_measurement(sweep: Sweep, name: str, safe_write_mode: bool = False, **kw
         raise RuntimeError('it looks like options.parameters is not configured.')
 
     for n, c in options.instrument_clients.items():
-        kwargs[n] = c.snapshot
+        if hasattr(c, "get_snapshot"):
+            kwargs[n] = c.get_snapshot
+        else:
+            kwargs[n] = c.snapshot
     kwargs['parameters'] = options.parameters.toParamDict
     
     py_env = get_environment_packages()
